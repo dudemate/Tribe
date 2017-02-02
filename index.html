@@ -16,6 +16,7 @@
       color: #f5f6f7;
   }
   p {font-size: 16px;}
+  .alpha {font-size: 13px;}
   .margin {margin-bottom: 45px;}
   .bg-1 { 
       background: url("Images/IMG SC.jpg") no-repeat left center fixed; 
@@ -50,6 +51,25 @@
   .navbar-nav  li a:hover {
       color: #1abc9c !important;
   }
+  .col-all {
+	  margin-bottom: 6rem;
+	  padding-left: 2rem;
+	  padding-right: 2rem
+  }
+  .con2 {
+	  max-height: 64px;
+	  max-width: 64px
+  }
+  .ul {
+	  padding:0;
+	  margin:0;
+}
+   .ulli {
+      padding-left:8px;
+      list-style:none;
+      margin-bottom:6px;
+}
+
   </style>
 </head>
 <body>
@@ -67,9 +87,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">WHO</a></li>
-        <li><a href="#">WHAT</a></li>
-        <li><a href="#">WHERE</a></li>
+        <li><a href="#who">WHO</a></li>
+        <li><a href="#what">WHAT</a></li>
+        <li><a href="#where">WHERE</a></li>
+        <li><a href="#footer">CONTACT</a></li>
       </ul>
     </div>
   </div>
@@ -80,11 +101,11 @@
    <div class="col-sm-8 col-lg-7">
    	   </div> 
    <div class="col-sm-4 col-lg-3">
-	        <h3 class="margin">Who Am I?</h3>
+	        <h3 class="margin" id="who">Who Am I?</h3>
 
       <p>I'm Folkert an engineer educated in Delft, holding a Bachelor in Industrial Engineering.</p>
 <p>Moving fast, starting up, challenging the status quo, facilitating innovation and doing technological projects gives me the energy I'm looking for.</p>
-<p>I'm continuously seeking new opportunities to engage in by challenging myself non-stop. Goal is to learn as much as possible an put my skills to good use.
+<p>I'm continuously seeking new opportunities and thereby challenging myself non-stop. Goal is to learn as much as possible so I can put my skills to good use.
 </p>
     </div> 
      <div class="col-lg-2">
@@ -93,44 +114,83 @@
 
 
 <!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  
-  </a>
+    <!-------LEFT COLUMN----->
+<div class="container-fluid bg-2 text-left">
+  <h3 class="margin text-center" id="what">What did the guy with the beard do?  
+  </h3>
+   <div class="row">
+    <div class="col-sm-6">
+    <h3 class="margin text-center">Education</h3>
+      	      <ul>
+			  <li> 
+			  	<p>Msc Management of Technology at TU Delft</p>	  			  </li>
+			  <li>
+			  	<p>Entrepreneurship & Innovation track within energy domain at KTH, Stockholm</p>
+			  </li>
+			  <li>
+			  	<p>BSc Industrial Engineering and Management at RUG</p>	  
+			  </li> 
+	      </ul>
+	  
+    </div>        
+    <!-------RIGHT COLUMN----->
+    <div class="col-sm-6">
+    <h3 class="margin text-center">Experience</h3>
+      	     <ul>
+			  <li> 
+			  	<p>Graduation internship at Accenture Digital</p>	  			  			  </li>
+			  <li>
+			  	<p>Digital marketing project at VinylExpress</p>
+			  </li>
+			  <li>
+			  	<p>Internship Business Development at Voiila</p>	  
+			  </li> 
+			   <li>
+			   	<p>Founder Art-easy</p>	  			  
+			   </li>
+	      </ul>
+	  
+    </div>    
+    </div>
+      <h3 class="margin text-center" id="what">What did the guy with the beard do?  
+  </h3>
 </div>
 
-
-
-
+   
 
 
 
 <!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Where To Find Me?</h3><br>
+  <h3 class="margin" id="where">Where To Find Me?</h3><br>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 col-all">
+      <img src="Images/cat.jpg" class="img-responsive margin thumbnail" 
+      style="width:100%" alt="Image">
       <p>Probably not hanging around with cats. They don't like me.</p>
-      <img src="Images/cat.jpg" class="img-responsive margin thumbnail" style="width:100%" alt="Image">
     </div>
-    <div class="col-sm-4"> 
-      <p>Snowboarding!! 
-	      <br></br>                                     </p>  
-      <img src="Images/ski trip.jpg" class="img-responsive margin thumbnnail" style="width:99%" alt="Image">
+    <div class="col-sm-4 col-all"> 
+      <img src="Images/ski trip.jpg" class="img-responsive margin thumbnnail" style="width:100%" alt="Image">
+            <p>Snowboarding!! </p>
     </div>
-    <div class="col-sm-4"> 
-      <p>Running, although I'm not that fast I guess..
-      </p>
-      <img src="Images/marathon.jpg" class="img-responsive margin thumbnail" style="width:100%" height="50%" alt="Image">
+    <div class="col-sm-4 col-all"> 
+      <img src="Images/marathon.jpg" class="img-responsive margin thumbnail" style="width:100%" alt="Image">
+        <p>Running, although I'm not that fast I guess..      </p>
     </div>
+    
     
   </div>
 </div>
 
+
+
+<!--------->
+
+
+
 <!-- Footer -->
 
-<footer class="container-fluid bg-4 text-center">
+<footer class="container-fluid bg-4 text-center" id="footer">
   <p>Bootstrap Theme Made By <a href="http://www.w3schools.com">www.w3schools.com</a></p> 
 </footer>
 
